@@ -1,0 +1,50 @@
+:root {
+  --primary: #19281E;
+  --primary-bg: rgba(25, 40, 30, 0.8);
+}
+
+body {
+  background: url(../images/nostalgiac_mobile.jpeg) 50% 50%/125% no-repeat;
+  transition: background-position 0.5s;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main > nav {
+  font-size: 4rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  background-color: var(--primary-bg);
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li > a {
+  color: #D0D0D0;
+}
+
+li:not(:first-child):not(:last-child) {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  width: 80%;
+  border: 1px solid #D0D0D0;
+}
