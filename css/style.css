@@ -1,6 +1,7 @@
 :root {
   --primary: #19281E;
-  --primary-bg: rgba(25, 40, 30, 0.8);
+  --primary-bg: #87b1db;
+  --light: #D0D0D0;
 }
 
 * {
@@ -44,7 +45,7 @@ li {
 }
 
 li > a {
-  color: #D0D0D0;
+  color: var(--primary);
 }
 
 li:not(:first-child):not(:last-child) {
@@ -54,7 +55,7 @@ li:not(:first-child):not(:last-child) {
 
 hr {
   width: 80%;
-  border: 1px solid #D0D0D0;
+  border: 1px solid var(--primary);
 }
 
 @media (min-width: 550px) {
