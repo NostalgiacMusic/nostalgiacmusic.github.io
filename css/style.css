@@ -3,6 +3,10 @@
   --primary-bg: rgba(25, 40, 30, 0.8);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: url(../images/nostalgiac_mobile.jpeg) 50% 50%/125% no-repeat;
   transition: background-position 0.5s;
@@ -47,4 +51,28 @@ li:not(:first-child):not(:last-child) {
 hr {
   width: 80%;
   border: 1px solid #D0D0D0;
+}
+
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 17vh;
+  font-weight: bold;
+  transform: rotate(90deg);
+  color: var(--primary-bg);
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+@media (min-width: 550px) {
+  body {
+    background: url(../images/nostalgiac.jpeg) 50% 50%/cover no-repeat;
+  }
+
+  main > nav {
+    font-size: 2.25rem;
+    padding: 1.25rem 0.75rem;
+  }
 }
